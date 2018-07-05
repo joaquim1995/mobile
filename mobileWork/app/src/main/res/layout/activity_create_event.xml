@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".pm.seniorhelp.CreateEventActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal|center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="225dp">
+
+
+        <EditText
+            android:id="@+id/nameEvent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome do Evento"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp"/>/>
+
+        <Spinner
+            android:id="@+id/color_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Escolha cor para o evento"
+            android:padding="5dp"
+
+            tools:textAlignment="center" />
+
+        <Button
+            android:id="@+id/lblDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolha Data Evento" />
+
+
+        <TimePicker
+            android:id="@+id/time_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner" />
+
+
+        <Button
+            android:id="@+id/btnLoadImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Escolha Imagem"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="215dp"
+            android:layout_marginBottom="10dp"/>/>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <Button
+            android:id="@+id/btnAddValueSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/orange"
+            android:textColor="@color/white"
+            android:text="Guardar" />
+
+        <TextView
+            android:id="@+id/NameSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nome"
+            android:inputType="textPersonName"
+            android:layout_marginBottom="10dp"/>/>
+
+
+    </LinearLayout>
+
+
+
+
+</android.support.constraint.ConstraintLayout>
